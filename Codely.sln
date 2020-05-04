@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codely", "Codely\Codely.csproj", "{5FDFD849-20AD-4B7D-9DD0-60285510E3F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FDFD849-20AD-4B7D-9DD0-60285510E3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FDFD849-20AD-4B7D-9DD0-60285510E3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FDFD849-20AD-4B7D-9DD0-60285510E3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FDFD849-20AD-4B7D-9DD0-60285510E3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA5F9D20-0476-483A-8289-0BC5BE468F29}
+	EndGlobalSection
+EndGlobal

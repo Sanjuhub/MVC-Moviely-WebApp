@@ -1,0 +1,29 @@
+﻿@model Codely.ViewModels.RandomMovieViewModel
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@* This is a comment in razor view.*@
+
+@{
+    var className = Model.Customers.Count > 0 ? "Popular" : null;
+}
+
+<h2 class="@className"   >@Model.Movie.Name</h2>
+@if (Model.Customers.Count == 0)
+{
+<text>No one has rented this movie yet!</text>
+}
+else
+{
+<ul>
+    @foreach (var customer in Model.Customers)
+    {
+    <li>
+        <p>@customer.Name</p>
+    </li>
+    }
+    </ul>
+}
+
+
