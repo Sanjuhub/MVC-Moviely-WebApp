@@ -24,6 +24,7 @@ namespace Codely.Models
         [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
         
+        [Range(0, 20)]
         [Display(Name = "Numbers in stock")]
         public byte NumberInStock { get; set; }
     }
