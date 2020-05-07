@@ -26,7 +26,7 @@ namespace Codely.Controllers.Api
             return _context.Customers.ToList().Select(Mapper.Map<Customer, CustomerDto>);
         }
 
-        //GET /api/customers/1
+        //GET /api/customers/1  
         public IHttpActionResult GetCustomer(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
