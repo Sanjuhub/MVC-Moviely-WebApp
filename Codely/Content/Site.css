@@ -36,3 +36,45 @@ textarea {
 {
     color: red;
 }
+
+.table__container .row {
+    width: 100%;
+}
+
+    .table__container .row:first-child .col-sm-6:first-child label {
+        float: left;
+    }
+
+    .table__container .row:first-child .col-sm-6:last-child label {
+        float: right;
+    }
+
+    .table__container .row:last-child .pagination {
+        float: right;
+    }
+
+.pagination a {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .disabled a {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.pagination .active a {
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
