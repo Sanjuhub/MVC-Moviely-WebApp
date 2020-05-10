@@ -21,5 +21,7 @@ namespace Codely.Dtos
         public bool IsSubscribedToNewLetter { get; set; }
 
         public byte MembershipTypeId { get; set; }
+
+        public MembershipTypeDto MembershipType { get; set; }
     }
 }
