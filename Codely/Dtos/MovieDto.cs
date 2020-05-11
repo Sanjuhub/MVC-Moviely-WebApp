@@ -22,5 +22,7 @@ namespace Codely.Dtos
 
         [Range(0, 20)]
         public byte NumberInStock { get; set; }
+
+        public GenreDto Genre { get; set; }
     }
 }

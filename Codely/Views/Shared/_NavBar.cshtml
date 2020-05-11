@@ -1,17 +1,17 @@
 ﻿<div class="navbar navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
-            <div class="container">
-            <div class="navbar-nav mr-auto">
-                <ul class="nav navbar-nav">
-                    <div class="navbar-header">   
+    <div class="container-fluid">
+        <div class="navbar-nav mr-auto">
+            <ul class="nav navbar-nav">
+                <div class="navbar-header">
                     <li>@Html.ActionLink("Codely", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</li>
-                    </div>
-                    <li>@Html.ActionLink("Customers", "Index", "Customers", new { area = "" }, new { @class = "navbar-brand" })</li>
-                    <li>@Html.ActionLink("Movies", "Index", "Movies", new { area = "" }, new { @class = "navbar-brand" })</li>
-                </ul>
-            </div>
-            @Html.Partial("_LoginPartial")
+                </div>
+                <li>@Html.ActionLink("Customers", "Index", "Customers", new { area = "" }, new { @class = "navbar-brand" })</li>
+                <li>@Html.ActionLink("Movies", "Index", "Movies", new { area = "" }, new { @class = "navbar-brand" })</li>
+            </ul>
         </div>
+        @Html.Partial("_LoginPartial")
     </div>
+</div>
 
 @*
 
