@@ -54,9 +54,9 @@ namespace Codely
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "265788254805710",
+               appSecret: "a4d95a7f560174fc0fe0c325c47d80e2 ");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

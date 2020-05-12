@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Data.Entity;
 using System.Net.Http;
 using System.Web.Http;
 

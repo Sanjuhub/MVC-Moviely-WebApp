@@ -253,6 +253,18 @@
     <Compile Include="Migrations\202005022157598_UpdateTypeOfGenreInMovie.Designer.cs">
       <DependentUpon>202005022157598_UpdateTypeOfGenreInMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005122002241_SeedUsers.cs" />
+    <Compile Include="Migrations\202005122002241_SeedUsers.Designer.cs">
+      <DependentUpon>202005122002241_SeedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005122024382_SeedUsersUpdate.cs" />
+    <Compile Include="Migrations\202005122024382_SeedUsersUpdate.Designer.cs">
+      <DependentUpon>202005122024382_SeedUsersUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005122057461_AddDrivingLicenseToUser.cs" />
+    <Compile Include="Migrations\202005122057461_AddDrivingLicenseToUser.Designer.cs">
+      <DependentUpon>202005122057461_AddDrivingLicenseToUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -262,6 +274,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Min18YearsIfMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
@@ -674,6 +687,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Movies\ReadOnlyIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -725,6 +739,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005022157598_UpdateTypeOfGenreInMovie.resx">
       <DependentUpon>202005022157598_UpdateTypeOfGenreInMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005122002241_SeedUsers.resx">
+      <DependentUpon>202005122002241_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005122024382_SeedUsersUpdate.resx">
+      <DependentUpon>202005122024382_SeedUsersUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005122057461_AddDrivingLicenseToUser.resx">
+      <DependentUpon>202005122057461_AddDrivingLicenseToUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

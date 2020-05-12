@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿ using System.Linq;
 using System.Web.Mvc;
 using Codely.Models;
 using System.Data.Entity;
@@ -21,9 +21,10 @@ namespace Codely.Controllers
         }
         public ViewResult Index()
         {
-            var movies = _context.Movies.Include(m => m.Genre).ToList();
+            if (User.IsInRole(RoleName.CanManageMovies))
+                return View("Index");
 
-            return View(movies);
+            return View("ReadOnlyIndex");
         }
 
         public ActionResult Details(int id)
@@ -36,6 +37,7 @@ namespace Codely.Controllers
             return View(movie);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ViewResult New()
         {
             var genres = _context.Geners.ToList();
@@ -48,6 +50,7 @@ namespace Codely.Controllers
             return View("MovieForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.SingleOrDefault(c => c.Id == id);

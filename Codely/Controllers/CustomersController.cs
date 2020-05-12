@@ -6,7 +6,7 @@ using System.Data.Entity;
 using Codely.ViewModels;
 
 namespace Codely.Controllers
-{
+{   
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
