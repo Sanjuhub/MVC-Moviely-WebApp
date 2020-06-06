@@ -4,9 +4,10 @@ using System.Web.Mvc;
 using Codely.Models;
 using System.Data.Entity;
 using Codely.ViewModels;
+using System.Runtime.Caching;
 
 namespace Codely.Controllers
-{   
+{
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
@@ -64,6 +65,14 @@ namespace Codely.Controllers
 
         public ViewResult Index()
         {
+            const string genre = "Genres";
+
+            if (MemoryCache.Default[genre] == null)
+            {
+                MemoryCache.Default[genre] = _context.Geners.ToList();
+            }
+            var genres = MemoryCache.Default[genre] as IEnumerable<Genre>;
+
             return View();
         }
 

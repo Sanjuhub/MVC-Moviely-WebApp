@@ -13,7 +13,8 @@ namespace Codely
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/bootbox.js",
                         "~/Scripts/DataTables/jquery.dataTables.js",
-                        "~/Scripts/DataTables/dataTables.bootstrap4.js"
+                        "~/Scripts/DataTables/dataTables.bootstrap4.js",
+                        "~/Scripts/typeahead.bundle.js"
                         ));
             //"~/Scripts/DataTables/dataTables.bootstrap4.js"
 
@@ -28,7 +29,9 @@ namespace Codely
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-yeti.css",
                       "~/Content/Datatables/css/dataTables.bootstrap4.css",
-                      "~/Content/site.css"));
+                      "~/Content/typeahead.css",
+                      "~/Content/site.css"
+                      ));
         }
     }
 }

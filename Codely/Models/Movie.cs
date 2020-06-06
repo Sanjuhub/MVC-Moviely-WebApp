@@ -27,5 +27,7 @@ namespace Codely.Models
         [Range(0, 20)]
         [Display(Name = "Numbers in stock")]
         public byte NumberInStock { get; set; }
+
+        public byte NumberAvailable { get; set; }
     }
 }
