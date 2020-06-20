@@ -14,6 +14,7 @@ namespace Codely
                         "~/Scripts/bootbox.js",
                         "~/Scripts/DataTables/jquery.dataTables.js",
                         "~/Scripts/DataTables/dataTables.bootstrap4.js",
+                        "~/Scripts/toastr.js",
                         "~/Scripts/typeahead.bundle.js"
                         ));
             //"~/Scripts/DataTables/dataTables.bootstrap4.js"
@@ -30,6 +31,7 @@ namespace Codely
                       "~/Content/bootstrap-yeti.css",
                       "~/Content/Datatables/css/dataTables.bootstrap4.css",
                       "~/Content/typeahead.css",
+                      "~/Content/toastr.css",
                       "~/Content/site.css"
                       ));
         }
